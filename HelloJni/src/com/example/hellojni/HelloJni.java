@@ -19,19 +19,26 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.util.Log;
 import android.view.WindowManager;
+import android.media.MediaMetadataRetriever;
 import android.os.Bundle;
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewFrame;
 import org.opencv.android.LoaderCallbackInterface;
 import org.opencv.android.OpenCVLoader;
+import org.opencv.android.Utils;
 import org.opencv.core.Core;
+import org.opencv.highgui.Highgui;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
+import org.opencv.core.MatOfInt;
+import org.opencv.imgproc.Imgproc;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
 import com.example.hellojni.R;
@@ -47,6 +54,7 @@ public class HelloJni extends Activity implements CvCameraViewListener2
     private Mat                    mRgba;
     private Mat                    mGray;
     private Mat                    outImage;
+    private Mat 				   clearestImage = null;
     
     
 	private BaseLoaderCallback  mLoaderCallback = new BaseLoaderCallback(this) {
@@ -58,7 +66,7 @@ public class HelloJni extends Activity implements CvCameraViewListener2
                 {
                     Log.i(TAG, "OpenCV loaded successfully");
 
-                    // Load native library after(!) OpenCV initialization
+                    // Loadprivate Mat 				   clearestImage; native library after(!) OpenCV initialization
                     System.loadLibrary("hello-jni");
                     // load cascade file from application resources
                 	localIPActicity = new ImageProcessingActivity();
@@ -88,6 +96,7 @@ public class HelloJni extends Activity implements CvCameraViewListener2
 
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.fd_activity_surface_view);
         mOpenCvCameraView.setCvCameraViewListener(this);
+        
     }
    
     public void onPause()
@@ -120,15 +129,49 @@ public class HelloJni extends Activity implements CvCameraViewListener2
         mRgba.release();
     }
     
+    
     public Mat onCameraFrame(CvCameraViewFrame inputFrame) {
 
-        mRgba = inputFrame.rgba();
-        mGray = inputFrame.gray();
-        outImage.create( mGray.size(), CvType.CV_8UC1 );
-        Log.i( TAG, Integer.toString( mRgba.channels() ) );
-        stringFromJNI( mGray.getNativeObjAddr(), mRgba.getNativeObjAddr(), outImage.getNativeObjAddr() );
-        return outImage; 
+        //mRgba = inputFrame.rgba();
+        //mGray = inputFrame.gray();
+        //outImage.create( mGray.size(), CvType.CV_8UC1 );
+        //Log.i( TAG, Integer.toString( mRgba.channels() ) );
+        //stringFromJNI( mGray.getNativeObjAddr(), mRgba.getNativeObjAddr(), outImage.getNativeObjAddr() );
+        //return outImage; 
+    	getFrames( "/sdcard/myvideo.mp4", 50 );
+		Highgui.imwrite( "/sdcard/Xreal.jpg", clearestImage);
+		
+		Log.i( TAG, "PRAT : Clearest Image Found " );
+		//clearestImage.adjustROI(0, inputFrame.gray().size().height, 0, inputFrame.gray().size().width);
+    	return clearestImage;
     }
+    
+    private void getFrames(String path, int noOfFrames) {
+			
+		MediaMetadataRetriever mRetriever = new MediaMetadataRetriever();
+		mRetriever.setDataSource(path);                    
+		for (int i = 0; i < noOfFrames; i++) {
+			Bitmap bFrame = mRetriever.getFrameAtTime( 33*1000, 
+					   MediaMetadataRetriever.OPTION_CLOSEST);
+			if( bFrame==null )
+				continue;
+			Log.i( TAG, "Processing Frame - " + i );
+			Mat img = new Mat();
+			Utils.bitmapToMat( bFrame, img);
+			if( clearestImage == null ){
+				Log.i( TAG, "Processing Creating Clearest Image - " + i );
+				clearestImage = new Mat();
+				clearestImage.create( img.size(), CvType.CV_8UC1 );
+			}
+			Log.i( TAG, "Processing Frame 2 - " + i );
+			Mat imgGray = new Mat( img.size(), CvType.CV_8UC1 );
+			Imgproc.cvtColor( img, imgGray, Imgproc.COLOR_BGR2GRAY);
+			stringFromJNI( imgGray.getNativeObjAddr(), img.getNativeObjAddr(), clearestImage.getNativeObjAddr() );
+			img.release();
+			imgGray.release();
+			bFrame.recycle();
+		}
+	}
 
     
     /* A native method that is implemented by the

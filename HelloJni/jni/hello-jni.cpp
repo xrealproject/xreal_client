@@ -21,6 +21,9 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <tesseract/baseapi.h>
+#include <leptonica/allheaders.h>
+
 
 #include <android/log.h>
 
@@ -63,6 +66,13 @@ public:
 static vector<SessionData *> matV;
 static const int Mat_Vec_Size = 50;
 
+double absfl( double A ){
+	if( A < 0 )
+		return ( -1*A );
+	else
+		return( A );
+}
+
 double calcClearity( Mat& image )
 {
 	IplImage iplImage = image;
@@ -72,9 +82,9 @@ double calcClearity( Mat& image )
 			unsigned char *ptr = (unsigned char *) iplImage.imageData;
 			int wS = iplImage.widthStep;
 			int nC = iplImage.nChannels;
-			secondOrderDerivative += 8 * *(ptr+i*wS+j*nC)-*(ptr+(i-1)*wS+(j-1)*nC) -*(ptr+(i-1)*wS+(j)*nC) -*(ptr+(i-1)*wS+(j+1)*nC)\
+			secondOrderDerivative += absfl(8 * *(ptr+i*wS+j*nC)-*(ptr+(i-1)*wS+(j-1)*nC) -*(ptr+(i-1)*wS+(j)*nC) -*(ptr+(i-1)*wS+(j+1)*nC)\
 					-*(ptr+(i)*wS+(j-1)*nC) -*(ptr+(i)*wS+(j+1)*nC) \
-					-*(ptr+(i+1)*wS+(j-1)*nC) -*(ptr+(i+1)*wS+(j)*nC) -*(ptr+(i+1)*wS+(j+1)*nC);
+					-*(ptr+(i+1)*wS+(j-1)*nC) -*(ptr+(i+1)*wS+(j)*nC) -*(ptr+(i+1)*wS+(j+1)*nC));
 		}
 	return secondOrderDerivative;
 }
@@ -148,6 +158,31 @@ JNIEXPORT void JNICALL Java_com_example_hellojni_HelloJni_nativeDetect( JNIEnv *
 	Mat& mRgb = *(Mat*)outImage;
 	mRgb = mGr.clone();
 	LOGD("PRAT NATIVE DETECT STOPED");
+}
+
+JNIEXPORT jstring JNICALL Java_com_example_hellojni_HelloJni_detectString( JNIEnv * jenv, jobject, jlong imageGray )
+{
+	Mat& mGr  = *(Mat*)imageGray;
+	double threshold( mGr, mGr, 127, 255, THRESH_BINARY);
+	Mat ker = Mat.ones( 3, 3, CV_8UC1 );
+	dilate( mGr, mGr, ker, Point(-1,-1), 1, BORDER_CONSTANT, morphologyDefaultBorderValue() );
+	erode( mGr, mGr, ker, Point(-1,-1), 1, BORDER_CONSTANT, morphologyDefaultBorderValue() );
+
+	tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
+	// Initialize tesseract-ocr with English, without specifying tessdata path
+	if (api->Init(NULL, "eng")) {
+		fprintf(stderr, "Could not initialize tesseract.\n");
+		exit(1);
+	}
+
+	IplImage iplImage = mGr;
+	api->SetImage( iplImage.imageData );
+	char *outText = api->GetUTF8Text();
+
+	api->End();
+	string returnString =  outText;
+	return( (*jenv)->NewStringUTF(env, outText) );
+
 }
 
 }
