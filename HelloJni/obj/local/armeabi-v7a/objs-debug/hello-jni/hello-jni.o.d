@@ -46,6 +46,58 @@
  /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/contrib/detection_based_tracker.hpp \
  /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/objdetect/objdetect.hpp \
  /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/deque \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv/cv.hpp \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv/cv.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/core/core_c.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/imgproc/imgproc_c.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/imgproc/types_c.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/imgproc/imgproc.hpp \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/video/tracking.hpp \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/features2d/features2d.hpp \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/miniflann.hpp \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/defines.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/config.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/flann.hpp \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/flann_base.hpp \
+ /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert \
+ /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/cstdio \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/general.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/defines.h \
+ /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/stdexcept \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/matrix.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/params.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/any.h \
+ /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/typeinfo \
+ /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/iostream \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/saving.h \
+ /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/cstring \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/nn_index.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/result_set.h \
+ /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/set \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/all_indices.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/kdtree_index.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/dynamic_bitset.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/dist.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/heap.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/allocator.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/random.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/kdtree_single_index.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/kmeans_index.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/logger.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/composite_index.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/linear_index.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/hierarchical_clustering_index.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/lsh_index.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/lsh_table.h \
+ /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/iomanip \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/autotuned_index.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/ground_truth.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/index_testing.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/timer.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/sampling.h \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/calib3d/calib3d.hpp \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/legacy/compat.hpp \
+ /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/core/internal.hpp \
  /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/list \
  /usr/local/include/tesseract/baseapi.h \
  /usr/local/include/tesseract/platform.h \
@@ -177,6 +229,110 @@
 /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/objdetect/objdetect.hpp:
 
 /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/deque:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv/cv.hpp:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv/cv.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/core/core_c.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/imgproc/imgproc_c.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/imgproc/types_c.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/imgproc/imgproc.hpp:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/video/tracking.hpp:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/features2d/features2d.hpp:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/miniflann.hpp:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/defines.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/config.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/flann.hpp:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/flann_base.hpp:
+
+/home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/cassert:
+
+/home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/cstdio:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/general.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/defines.h:
+
+/home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/stdexcept:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/matrix.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/params.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/any.h:
+
+/home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/typeinfo:
+
+/home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/iostream:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/saving.h:
+
+/home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/cstring:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/nn_index.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/result_set.h:
+
+/home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/set:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/all_indices.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/kdtree_index.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/dynamic_bitset.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/dist.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/heap.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/allocator.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/random.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/kdtree_single_index.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/kmeans_index.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/logger.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/composite_index.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/linear_index.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/hierarchical_clustering_index.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/lsh_index.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/lsh_table.h:
+
+/home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/iomanip:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/autotuned_index.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/ground_truth.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/index_testing.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/timer.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/flann/sampling.h:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/calib3d/calib3d.hpp:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/legacy/compat.hpp:
+
+/home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/include/opencv2/core/internal.hpp:
 
 /home/prat/installs/android-ndk-r8e/sources/cxx-stl/gnu-libstdc++/4.6/include/list:
 

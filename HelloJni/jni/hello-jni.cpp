@@ -17,17 +17,15 @@
 #include <jni.h>
 #include <opencv2/core/core.hpp>
 #include <opencv2/contrib/detection_based_tracker.hpp>
-
-#include <string>
+#include <opencv/cv.hpp>
 #include <vector>
 #include <list>
 #include <tesseract/baseapi.h>
 #include <leptonica/allheaders.h>
-
-
 #include <android/log.h>
 
 extern "C" {
+#include <string.h>
 /*
  * Class:     om_example_hellojni_HelloJni
  * Method:    stringFromJNI
@@ -160,11 +158,11 @@ JNIEXPORT void JNICALL Java_com_example_hellojni_HelloJni_nativeDetect( JNIEnv *
 	LOGD("PRAT NATIVE DETECT STOPED");
 }
 
-JNIEXPORT jstring JNICALL Java_com_example_hellojni_HelloJni_detectString( JNIEnv * jenv, jobject, jlong imageGray )
+jstring Java_com_example_hellojni_HelloJni_detectString( JNIEnv *env, jobject thiz, jlong imageGray )
 {
 	Mat& mGr  = *(Mat*)imageGray;
-	double threshold( mGr, mGr, 127, 255, THRESH_BINARY);
-	Mat ker = Mat.ones( 3, 3, CV_8UC1 );
+	threshold( mGr, mGr, 127, 255, THRESH_BINARY);
+	Mat ker = Mat::ones( 3, 3, CV_8UC1 );
 	dilate( mGr, mGr, ker, Point(-1,-1), 1, BORDER_CONSTANT, morphologyDefaultBorderValue() );
 	erode( mGr, mGr, ker, Point(-1,-1), 1, BORDER_CONSTANT, morphologyDefaultBorderValue() );
 
@@ -176,12 +174,13 @@ JNIEXPORT jstring JNICALL Java_com_example_hellojni_HelloJni_detectString( JNIEn
 	}
 
 	IplImage iplImage = mGr;
-	api->SetImage( iplImage.imageData );
+	api->SetImage( (unsigned char *)iplImage.imageData, iplImage.width, iplImage.height, 1, iplImage.width );
 	char *outText = api->GetUTF8Text();
 
 	api->End();
 	string returnString =  outText;
-	return( (*jenv)->NewStringUTF(env, outText) );
+	return (env)->NewStringUTF("Hello from JNI !");
+	//return( (*jenv)->NewStringUTF( jenv, outText) );
 
 }
 
