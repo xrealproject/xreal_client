@@ -20,8 +20,6 @@
 #include <opencv/cv.hpp>
 #include <vector>
 #include <list>
-#include <tesseract/baseapi.h>
-#include <leptonica/allheaders.h>
 #include <android/log.h>
 
 extern "C" {
@@ -156,32 +154,6 @@ JNIEXPORT void JNICALL Java_com_example_hellojni_HelloJni_nativeDetect( JNIEnv *
 	Mat& mRgb = *(Mat*)outImage;
 	mRgb = mGr.clone();
 	LOGD("PRAT NATIVE DETECT STOPED");
-}
-
-jstring Java_com_example_hellojni_HelloJni_detectString( JNIEnv *env, jobject thiz, jlong imageGray )
-{
-	Mat& mGr  = *(Mat*)imageGray;
-	threshold( mGr, mGr, 127, 255, THRESH_BINARY);
-	Mat ker = Mat::ones( 3, 3, CV_8UC1 );
-	dilate( mGr, mGr, ker, Point(-1,-1), 1, BORDER_CONSTANT, morphologyDefaultBorderValue() );
-	erode( mGr, mGr, ker, Point(-1,-1), 1, BORDER_CONSTANT, morphologyDefaultBorderValue() );
-
-	tesseract::TessBaseAPI *api = new tesseract::TessBaseAPI();
-	// Initialize tesseract-ocr with English, without specifying tessdata path
-	if (api->Init(NULL, "eng")) {
-		fprintf(stderr, "Could not initialize tesseract.\n");
-		exit(1);
-	}
-
-	IplImage iplImage = mGr;
-	api->SetImage( (unsigned char *)iplImage.imageData, iplImage.width, iplImage.height, 1, iplImage.width );
-	char *outText = api->GetUTF8Text();
-
-	api->End();
-	string returnString =  outText;
-	return (env)->NewStringUTF("Hello from JNI !");
-	//return( (*jenv)->NewStringUTF( jenv, outText) );
-
 }
 
 }
