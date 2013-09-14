@@ -5,7 +5,8 @@ include $(CLEAR_VARS)
 #OPENCV_CAMERA_MODULES:=on
 #OPENCV_INSTALL_MODULES:=on
 #OPENCV_LIB_TYPE:=SHARED
-include /home/prat/installs/opencv-2.4.5/android/build/install/sdk/native/jni/OpenCV.mk
+
+include /OpenCV_245_android_sdk/sdk/native/jni/OpenCV.mk
 
 LOCAL_MODULE := hello-jni
 LOCAL_SRC_FILES := hello-jni.cpp
