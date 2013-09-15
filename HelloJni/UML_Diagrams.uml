@@ -1,8 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_VIvg0B1xEeO5NarF-mfjiw" name="Model">
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_VIvg0B1xEeO5NarF-mfjiw" name="Model">
   <packageImport xmi:id="_VIvg0R1xEeO5NarF-mfjiw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_VKAsIB1xEeO5NarF-mfjiw" name="UMLActivity"/>
-  <packagedElement xmi:type="uml:Class" xmi:id="_DB78YB2FEeO5NarF-mfjiw" name="Class1"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_VKAsIB1xEeO5NarF-mfjiw" name="savedInstanceState">
+    <nestedClassifier xmi:type="uml:Signal" xmi:id="_s1YuwB2REeO5NarF-mfjiw" name="Bundle"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_DB78YB2FEeO5NarF-mfjiw" clientDependency="_h_D0gB2IEeO5NarF-mfjiw _2nJqIB2ZEeO5NarF-mfjiw _-N8cYB2ZEeO5NarF-mfjiw _p__soB2qEeO5NarF-mfjiw _vTYR0B2qEeO5NarF-mfjiw" name="HelloJni">
+    <generalization xmi:id="_DplOYB2JEeO5NarF-mfjiw" general="_Do9jUB2JEeO5NarF-mfjiw"/>
+    <ownedAttribute xmi:id="_XpV84B2TEeO5NarF-mfjiw" name="TAG" visibility="private" isStatic="true" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X0CJ8B2TEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X0CxAB2TEeO5NarF-mfjiw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_X0D_IB2TEeO5NarF-mfjiw" value="OCVSample::Activity"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rOSjMB2TEeO5NarF-mfjiw" name="clearestImage" visibility="private" type="_ODR6MB2WEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rUiVIB2TEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rUi8MB2TEeO5NarF-mfjiw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_rUjjQB2TEeO5NarF-mfjiw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_E8YckB2VEeO5NarF-mfjiw" name="localIPActivity" visibility="package" type="_PMTlgB2bEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_FKAB0B2VEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_FKAo4B2VEeO5NarF-mfjiw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_FKBP8B2VEeO5NarF-mfjiw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_MVPggB2VEeO5NarF-mfjiw" name="mGray" visibility="private" type="_ODR6MB2WEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MbhHoB2VEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MbiVwB2VEeO5NarF-mfjiw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_Mbi80B2VEeO5NarF-mfjiw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RG0ZIB2VEeO5NarF-mfjiw" name="mloaderCallback" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RMtlwB2VEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RMuM0B2VEeO5NarF-mfjiw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_RMuz4B2VEeO5NarF-mfjiw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VPBkoB2VEeO5NarF-mfjiw" name="mOpenCvCameraView" visibility="package" type="_-NgXgB2ZEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VVKo4B2VEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VVLP8B2VEeO5NarF-mfjiw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_VVMeEB2VEeO5NarF-mfjiw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_a_hjoB2VEeO5NarF-mfjiw" name="mRgba" visibility="private" type="_ODR6MB2WEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bJLO4B2VEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bJL18B2VEeO5NarF-mfjiw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_bJMdAB2VEeO5NarF-mfjiw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_dvlQcB2VEeO5NarF-mfjiw" name="outImage" visibility="private" type="_ODR6MB2WEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_d4GTQB2VEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_d4G6UB2VEeO5NarF-mfjiw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_d4IIcB2VEeO5NarF-mfjiw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_LpZwYB2kEeO5NarF-mfjiw" name="mLoaderCallback" visibility="package">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lzb2IB2kEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LzcdMB2kEeO5NarF-mfjiw" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_LzdrUB2kEeO5NarF-mfjiw">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_sZbQ4B2kEeO5NarF-mfjiw" name="interface3">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sZcfAB2kEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sZcfAR2kEeO5NarF-mfjiw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1RP-cB2qEeO5NarF-mfjiw" name="mLoadCallback" type="_p_k14B2qEeO5NarF-mfjiw" association="_1RQlgB2qEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1RP-cR2qEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1RP-ch2qEeO5NarF-mfjiw" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:id="_-N8cYB2ZEeO5NarF-mfjiw" name="InterfaceRealization1" client="_DB78YB2FEeO5NarF-mfjiw" supplier="_-NgXgB2ZEeO5NarF-mfjiw" contract="_-NgXgB2ZEeO5NarF-mfjiw"/>
+    <ownedOperation xmi:id="_P4tHkB2SEeO5NarF-mfjiw" name="nativeDetect"/>
+    <ownedOperation xmi:id="_QJf8oB2SEeO5NarF-mfjiw" name="onCameraFrame"/>
+    <ownedOperation xmi:id="_QcM2MB2SEeO5NarF-mfjiw" name="onCameraViewStarted"/>
+    <ownedOperation xmi:id="_IZBNcB2TEeO5NarF-mfjiw" name="onCameraViewStopped"/>
+    <ownedOperation xmi:id="_JyGgQB2TEeO5NarF-mfjiw" name="onCreate" isAbstract="true"/>
+    <ownedOperation xmi:id="_Lkx-0B2TEeO5NarF-mfjiw" name="onDestroy" visibility="public" isAbstract="true"/>
+    <ownedOperation xmi:id="_MkMNYB2TEeO5NarF-mfjiw" name="onPause" isAbstract="true"/>
+    <ownedOperation xmi:id="_Ne7-YB2TEeO5NarF-mfjiw" name="onResume" isAbstract="true"/>
+    <ownedOperation xmi:id="_RQuN8B2TEeO5NarF-mfjiw" name="stringFromJNI"/>
+    <ownedOperation xmi:id="_T2hLgB2TEeO5NarF-mfjiw" name="unimplementedStringFromJNI"/>
+    <ownedOperation xmi:id="_uHvKoB2VEeO5NarF-mfjiw" name="getFrames"/>
+    <ownedOperation xmi:id="_7-1RwB2fEeO5NarF-mfjiw" name="mLoaderCallback"/>
+    <ownedReception xmi:id="_Ez4SwB2TEeO5NarF-mfjiw" name="Reception1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_h-jeMB2IEeO5NarF-mfjiw" name="CvCameraViewListener2">
+    <ownedOperation xmi:id="_073cwB2IEeO5NarF-mfjiw" name="Operation1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Realization" xmi:id="_h_D0gB2IEeO5NarF-mfjiw" name="implements4" client="_DB78YB2FEeO5NarF-mfjiw" supplier="_h-jeMB2IEeO5NarF-mfjiw"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_Do9jUB2JEeO5NarF-mfjiw" name="Activity">
+    <ownedOperation xmi:id="_EYb4cB2JEeO5NarF-mfjiw" name="onCreate" visibility="protected">
+      <ownedParameter xmi:id="_hOgyQB2REeO5NarF-mfjiw" name="Bundle" type="_VKAsIB1xEeO5NarF-mfjiw" isUnique="false"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_vHetMB2REeO5NarF-mfjiw" name="onDestroy" visibility="protected"/>
+    <ownedOperation xmi:id="_6nhB4B2REeO5NarF-mfjiw" name="onPause" visibility="protected"/>
+    <ownedOperation xmi:id="_7upCAB2REeO5NarF-mfjiw" name="onResume" visibility="protected"/>
+    <ownedReception xmi:id="_oGdhgB2REeO5NarF-mfjiw" name="eception1" signal="_s1YuwB2REeO5NarF-mfjiw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_DgVuoB2QEeO5NarF-mfjiw" name="savedInstanceState"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_ODR6MB2WEeO5NarF-mfjiw" name="Mat" visibility="protected"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_2nJqIB2ZEeO5NarF-mfjiw" name="Dependency1" client="_DB78YB2FEeO5NarF-mfjiw" supplier="_ODR6MB2WEeO5NarF-mfjiw"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-NgXgB2ZEeO5NarF-mfjiw" name="CameraBridgeViewBase"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_PMTlgB2bEeO5NarF-mfjiw" name="ImageProcessingActivity">
+    <ownedOperation xmi:id="_dPOjIB2aEeO5NarF-mfjiw" name="nativeDetect"/>
+    <ownedOperation xmi:id="_cE6FEB2aEeO5NarF-mfjiw" name="detect"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_PNWuYx2bEeO5NarF-mfjiw" name="implements2" visibility="package" memberEnd="_PNWuZB2bEeO5NarF-mfjiw _PNWuYB2bEeO5NarF-mfjiw">
+    <ownedEnd xmi:id="_PNWuZB2bEeO5NarF-mfjiw" name="" type="_DB78YB2FEeO5NarF-mfjiw" association="_PNWuYx2bEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PNWuZR2bEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PNWuZh2bEeO5NarF-mfjiw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_PNWuYB2bEeO5NarF-mfjiw" name="localIPActicity" type="_PMTlgB2bEeO5NarF-mfjiw" aggregation="shared" association="_PNWuYx2bEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_PNWuYR2bEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_PNWuYh2bEeO5NarF-mfjiw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_74kOgB2bEeO5NarF-mfjiw" name="implements1" visibility="package" memberEnd="_74kOhB2bEeO5NarF-mfjiw _74kOgR2bEeO5NarF-mfjiw">
+    <ownedEnd xmi:id="_74kOgR2bEeO5NarF-mfjiw" name="" type="_DB78YB2FEeO5NarF-mfjiw" association="_74kOgB2bEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_74kOgh2bEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_74kOgx2bEeO5NarF-mfjiw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_74kOhB2bEeO5NarF-mfjiw" name="mOpenCvCameraView" type="_-NgXgB2ZEeO5NarF-mfjiw" aggregation="shared" association="_74kOgB2bEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_74kOhR2bEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_74kOhh2bEeO5NarF-mfjiw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xqD8sB2nEeO5NarF-mfjiw" name="implements3" memberEnd="_xqD8tB2nEeO5NarF-mfjiw _xqD8sR2nEeO5NarF-mfjiw">
+    <ownedEnd xmi:id="_xqD8sR2nEeO5NarF-mfjiw" name="" type="_DB78YB2FEeO5NarF-mfjiw" association="_xqD8sB2nEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xqD8sh2nEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xqD8sx2nEeO5NarF-mfjiw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_xqD8tB2nEeO5NarF-mfjiw" name="localIPActivity" type="_PMTlgB2bEeO5NarF-mfjiw" aggregation="shared" association="_xqD8sB2nEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xqD8tR2nEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xqD8th2nEeO5NarF-mfjiw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_p_k14B2qEeO5NarF-mfjiw" name="BaseLoaderCallback">
+    <ownedComment xmi:id="_ahzq4B2rEeO5NarF-mfjiw">
+      <body>BaseLoaderCallback</body>
+    </ownedComment>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_p__soB2qEeO5NarF-mfjiw" name="Dependency2" client="_DB78YB2FEeO5NarF-mfjiw" supplier="_p_k14B2qEeO5NarF-mfjiw"/>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_vTYR0B2qEeO5NarF-mfjiw" name="Abstraction1" client="_DB78YB2FEeO5NarF-mfjiw" supplier="_p_k14B2qEeO5NarF-mfjiw"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1RQlgB2qEeO5NarF-mfjiw" name="" visibility="private" memberEnd="_1RQlgR2qEeO5NarF-mfjiw _1RP-cB2qEeO5NarF-mfjiw">
+    <ownedEnd xmi:id="_1RQlgR2qEeO5NarF-mfjiw" name="" type="_DB78YB2FEeO5NarF-mfjiw" association="_1RQlgB2qEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1RQlgh2qEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1RQlgx2qEeO5NarF-mfjiw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
 </uml:Model>

@@ -41,6 +41,7 @@ import org.opencv.core.MatOfInt;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
+
 import com.example.hellojni.R;
 
 import com.example.hellojni.ImageProcessingActivity;
@@ -49,7 +50,7 @@ import com.example.hellojni.ImageProcessingActivity;
 public class HelloJni extends Activity implements CvCameraViewListener2
 {
 	private static final String    TAG                 = "OCVSample::Activity";
-	private ImageProcessingActivity localIPActicity; 	
+	private ImageProcessingActivity localIPActicity;
     private CameraBridgeViewBase   mOpenCvCameraView;
     private Mat                    mRgba;
     private Mat                    mGray;
