@@ -41,7 +41,6 @@ import org.opencv.core.MatOfInt;
 import org.opencv.imgproc.Imgproc;
 import org.opencv.android.CameraBridgeViewBase;
 import org.opencv.android.CameraBridgeViewBase.CvCameraViewListener2;
-
 import com.example.hellojni.R;
 
 import com.example.hellojni.ImageProcessingActivity;
@@ -50,7 +49,7 @@ import com.example.hellojni.ImageProcessingActivity;
 public class HelloJni extends Activity implements CvCameraViewListener2
 {
 	private static final String    TAG                 = "OCVSample::Activity";
-	private ImageProcessingActivity localIPActicity;
+	private ImageProcessingActivity localIPActicity; 	
     private CameraBridgeViewBase   mOpenCvCameraView;
     private Mat                    mRgba;
     private Mat                    mGray;
@@ -168,6 +167,7 @@ public class HelloJni extends Activity implements CvCameraViewListener2
 			Mat imgGray = new Mat( img.size(), CvType.CV_8UC1 );
 			Imgproc.cvtColor( img, imgGray, Imgproc.COLOR_BGR2GRAY);
 			stringFromJNI( imgGray.getNativeObjAddr(), img.getNativeObjAddr(), clearestImage.getNativeObjAddr() );
+			GetNumberPlate( clearestImage.getNativeObjAddr(), clearestImage.getNativeObjAddr() );
 			img.release();
 			imgGray.release();
 			bFrame.recycle();
@@ -193,4 +193,5 @@ public class HelloJni extends Activity implements CvCameraViewListener2
      */
     public native String  unimplementedStringFromJNI(long inputImage, long outImage);
     public native void nativeDetect( long inputImage, long outImage);
+    public native void GetNumberPlate( long imageGray, long outImage );
 }

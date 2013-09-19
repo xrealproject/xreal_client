@@ -119,7 +119,6 @@ JNIEXPORT void JNICALL Java_com_example_hellojni_HelloJni_stringFromJNI( JNIEnv 
 	Mat& mGr  = *((Mat*)imageGray);
 	Mat& mRgb = *((Mat*)imageRGB);
 	Mat& oImage = *((Mat*)outImage);
-
 	SessionData* newSession = new SessionData(mRgb, mGr);
 
 	matV.push_back(newSession);
@@ -145,6 +144,35 @@ JNIEXPORT void JNICALL Java_com_example_hellojni_HelloJni_stringFromJNI( JNIEnv 
 	LOGD("PRAT NATIVE DETECT STOPED");
 
     //return (*env)->NewStringUTF(env, "Hello from JNI !");
+}
+
+JNIEXPORT void JNICALL Java_com_example_hellojni_HelloJni_GetNumberPlate( JNIEnv * jenv, jobject, jlong imageGray, jlong outImage ){
+	Mat& mGr  = *((Mat*)imageGray);
+	Mat& oImage = *((Mat*)outImage);
+	CvMemStorage* storage = cvCreateMemStorage(0);
+	CvSeq* lines = 0;
+	list<CvPoint> listOfLines;
+	listOfLines.clear();
+
+	IplImage iplMGr = mGr;
+	IplImage *edges = cvCreateImage( cvSize( iplMGr.width, iplMGr.height ), IPL_DEPTH_8U, 1 );
+	cvCanny( &iplMGr, edges, 50, 200, 3);
+	lines = cvHoughLines2( edges, \
+						   storage,\
+						   CV_HOUGH_PROBABILISTIC,\
+						   1,\
+						   CV_PI/180,\
+						   80,\
+						   30,\
+						   10 );
+	for( int i = 0; i < lines->total; i++ )
+	{
+		CvPoint* iline = (CvPoint*)cvGetSeqElem(lines,i);
+		listOfLines.push_back( *iline );
+		line( oImage, iline[0], iline[1], cvScalar(255,0,0,0) , 3, 8, 0 );
+	}
+
+
 }
 
 JNIEXPORT void JNICALL Java_com_example_hellojni_HelloJni_nativeDetect( JNIEnv * jenv, jclass, jlong thiz, jlong imageGray, jlong outImage )

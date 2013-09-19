@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_VIvg0B1xEeO5NarF-mfjiw" name="Model">
+  <ownedComment xmi:id="_WfT0sB_uEeOs_t6Wv7p-Nw">
+    <body> detection of environment</body>
+  </ownedComment>
   <packageImport xmi:id="_VIvg0R1xEeO5NarF-mfjiw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
-  <packagedElement xmi:type="uml:Activity" xmi:id="_VKAsIB1xEeO5NarF-mfjiw" name="savedInstanceState">
-    <nestedClassifier xmi:type="uml:Signal" xmi:id="_s1YuwB2REeO5NarF-mfjiw" name="Bundle"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_DB78YB2FEeO5NarF-mfjiw" clientDependency="_h_D0gB2IEeO5NarF-mfjiw _2nJqIB2ZEeO5NarF-mfjiw _-N8cYB2ZEeO5NarF-mfjiw _p__soB2qEeO5NarF-mfjiw _vTYR0B2qEeO5NarF-mfjiw" name="HelloJni">
+  <packagedElement xmi:type="uml:Class" xmi:id="_DB78YB2FEeO5NarF-mfjiw" clientDependency="_h_D0gB2IEeO5NarF-mfjiw _2nJqIB2ZEeO5NarF-mfjiw _-N8cYB2ZEeO5NarF-mfjiw _Y8yUkB39EeO05KfLHJferQ" name="HelloJni">
     <generalization xmi:id="_DplOYB2JEeO5NarF-mfjiw" general="_Do9jUB2JEeO5NarF-mfjiw"/>
     <ownedAttribute xmi:id="_XpV84B2TEeO5NarF-mfjiw" name="TAG" visibility="private" isStatic="true" isUnique="false">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -63,7 +63,7 @@
         <value xsi:nil="true"/>
       </defaultValue>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_LpZwYB2kEeO5NarF-mfjiw" name="mLoaderCallback" visibility="package">
+    <ownedAttribute xmi:id="_LpZwYB2kEeO5NarF-mfjiw" name="mLoaderCallback" visibility="package" type="_p_k14B2qEeO5NarF-mfjiw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lzb2IB2kEeO5NarF-mfjiw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LzcdMB2kEeO5NarF-mfjiw" value="1"/>
       <defaultValue xmi:type="uml:LiteralString" xmi:id="_LzdrUB2kEeO5NarF-mfjiw">
@@ -74,9 +74,21 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sZcfAB2kEeO5NarF-mfjiw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sZcfAR2kEeO5NarF-mfjiw" value="1"/>
     </ownedAttribute>
-    <ownedAttribute xmi:id="_1RP-cB2qEeO5NarF-mfjiw" name="mLoadCallback" type="_p_k14B2qEeO5NarF-mfjiw" association="_1RQlgB2qEeO5NarF-mfjiw">
+    <ownedAttribute xmi:id="_1RP-cB2qEeO5NarF-mfjiw" name="mLoadCallback" type="_p_k14B2qEeO5NarF-mfjiw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1RP-cR2qEeO5NarF-mfjiw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1RP-ch2qEeO5NarF-mfjiw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="__xSnYR36EeO05KfLHJferQ" name="mLoaderCallback" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__xSnYh36EeO05KfLHJferQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__xSnYx36EeO05KfLHJferQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_74kOhB2bEeO5NarF-mfjiw" name="mOpenCvCameraView" type="_-NgXgB2ZEeO5NarF-mfjiw" aggregation="shared" association="_74kOgB2bEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_74kOhR2bEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_74kOhh2bEeO5NarF-mfjiw" value="*"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_xqD8tB2nEeO5NarF-mfjiw" name="localIPActivity" type="_PMTlgB2bEeO5NarF-mfjiw" aggregation="shared" association="_xqD8sB2nEeO5NarF-mfjiw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xqD8tR2nEeO5NarF-mfjiw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xqD8th2nEeO5NarF-mfjiw" value="*"/>
     </ownedAttribute>
     <interfaceRealization xmi:id="_-N8cYB2ZEeO5NarF-mfjiw" name="InterfaceRealization1" client="_DB78YB2FEeO5NarF-mfjiw" supplier="_-NgXgB2ZEeO5NarF-mfjiw" contract="_-NgXgB2ZEeO5NarF-mfjiw"/>
     <ownedOperation xmi:id="_P4tHkB2SEeO5NarF-mfjiw" name="nativeDetect"/>
@@ -99,12 +111,12 @@
   <packagedElement xmi:type="uml:Realization" xmi:id="_h_D0gB2IEeO5NarF-mfjiw" name="implements4" client="_DB78YB2FEeO5NarF-mfjiw" supplier="_h-jeMB2IEeO5NarF-mfjiw"/>
   <packagedElement xmi:type="uml:Class" xmi:id="_Do9jUB2JEeO5NarF-mfjiw" name="Activity">
     <ownedOperation xmi:id="_EYb4cB2JEeO5NarF-mfjiw" name="onCreate" visibility="protected">
-      <ownedParameter xmi:id="_hOgyQB2REeO5NarF-mfjiw" name="Bundle" type="_VKAsIB1xEeO5NarF-mfjiw" isUnique="false"/>
+      <ownedParameter xmi:id="_hOgyQB2REeO5NarF-mfjiw" name="Bundle" isUnique="false"/>
     </ownedOperation>
     <ownedOperation xmi:id="_vHetMB2REeO5NarF-mfjiw" name="onDestroy" visibility="protected"/>
     <ownedOperation xmi:id="_6nhB4B2REeO5NarF-mfjiw" name="onPause" visibility="protected"/>
     <ownedOperation xmi:id="_7upCAB2REeO5NarF-mfjiw" name="onResume" visibility="protected"/>
-    <ownedReception xmi:id="_oGdhgB2REeO5NarF-mfjiw" name="eception1" signal="_s1YuwB2REeO5NarF-mfjiw"/>
+    <ownedReception xmi:id="_oGdhgB2REeO5NarF-mfjiw" name="eception1"/>
   </packagedElement>
   <packagedElement xmi:type="uml:InstanceSpecification" xmi:id="_DgVuoB2QEeO5NarF-mfjiw" name="savedInstanceState"/>
   <packagedElement xmi:type="uml:DataType" xmi:id="_ODR6MB2WEeO5NarF-mfjiw" name="Mat" visibility="protected"/>
@@ -129,32 +141,356 @@
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_74kOgh2bEeO5NarF-mfjiw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_74kOgx2bEeO5NarF-mfjiw" value="1"/>
     </ownedEnd>
-    <ownedEnd xmi:id="_74kOhB2bEeO5NarF-mfjiw" name="mOpenCvCameraView" type="_-NgXgB2ZEeO5NarF-mfjiw" aggregation="shared" association="_74kOgB2bEeO5NarF-mfjiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_74kOhR2bEeO5NarF-mfjiw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_74kOhh2bEeO5NarF-mfjiw" value="1"/>
-    </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_xqD8sB2nEeO5NarF-mfjiw" name="implements3" memberEnd="_xqD8tB2nEeO5NarF-mfjiw _xqD8sR2nEeO5NarF-mfjiw">
     <ownedEnd xmi:id="_xqD8sR2nEeO5NarF-mfjiw" name="" type="_DB78YB2FEeO5NarF-mfjiw" association="_xqD8sB2nEeO5NarF-mfjiw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xqD8sh2nEeO5NarF-mfjiw" value="1"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xqD8sx2nEeO5NarF-mfjiw" value="1"/>
     </ownedEnd>
-    <ownedEnd xmi:id="_xqD8tB2nEeO5NarF-mfjiw" name="localIPActivity" type="_PMTlgB2bEeO5NarF-mfjiw" aggregation="shared" association="_xqD8sB2nEeO5NarF-mfjiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_xqD8tR2nEeO5NarF-mfjiw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_xqD8th2nEeO5NarF-mfjiw" value="1"/>
-    </ownedEnd>
   </packagedElement>
   <packagedElement xmi:type="uml:Interface" xmi:id="_p_k14B2qEeO5NarF-mfjiw" name="BaseLoaderCallback">
     <ownedComment xmi:id="_ahzq4B2rEeO5NarF-mfjiw">
       <body>BaseLoaderCallback</body>
     </ownedComment>
+    <ownedOperation xmi:id="_hfOPsB39EeO05KfLHJferQ" name="onManagerConnected" visibility="protected">
+      <ownedParameter xmi:id="_n1OIcB39EeO05KfLHJferQ" name="status">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedParameter>
+    </ownedOperation>
   </packagedElement>
-  <packagedElement xmi:type="uml:Dependency" xmi:id="_p__soB2qEeO5NarF-mfjiw" name="Dependency2" client="_DB78YB2FEeO5NarF-mfjiw" supplier="_p_k14B2qEeO5NarF-mfjiw"/>
-  <packagedElement xmi:type="uml:Abstraction" xmi:id="_vTYR0B2qEeO5NarF-mfjiw" name="Abstraction1" client="_DB78YB2FEeO5NarF-mfjiw" supplier="_p_k14B2qEeO5NarF-mfjiw"/>
-  <packagedElement xmi:type="uml:Association" xmi:id="_1RQlgB2qEeO5NarF-mfjiw" name="" visibility="private" memberEnd="_1RQlgR2qEeO5NarF-mfjiw _1RP-cB2qEeO5NarF-mfjiw">
-    <ownedEnd xmi:id="_1RQlgR2qEeO5NarF-mfjiw" name="" type="_DB78YB2FEeO5NarF-mfjiw" association="_1RQlgB2qEeO5NarF-mfjiw">
-      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1RQlgh2qEeO5NarF-mfjiw" value="1"/>
-      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1RQlgx2qEeO5NarF-mfjiw" value="1"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7wW2ox38EeO05KfLHJferQ" name="use" memberEnd="_7wW2pB38EeO05KfLHJferQ _7wW2oB38EeO05KfLHJferQ" navigableOwnedEnd="_7wW2oB38EeO05KfLHJferQ">
+    <ownedEnd xmi:id="_7wW2pB38EeO05KfLHJferQ" name="mLoaderCallback" type="_DB78YB2FEeO5NarF-mfjiw" association="_7wW2ox38EeO05KfLHJferQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7wW2pR38EeO05KfLHJferQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7wW2ph38EeO05KfLHJferQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_7wW2oB38EeO05KfLHJferQ" name="" type="_p_k14B2qEeO5NarF-mfjiw" aggregation="composite" association="_7wW2ox38EeO05KfLHJferQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7wW2oR38EeO05KfLHJferQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7wW2oh38EeO05KfLHJferQ" value="1"/>
     </ownedEnd>
   </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Y8yUkB39EeO05KfLHJferQ" name="Dependency2" client="_DB78YB2FEeO5NarF-mfjiw" supplier="_ODR6MB2WEeO5NarF-mfjiw"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_7BFsYB_qEeOs_t6Wv7p-Nw" name="User">
+    <generalization xmi:id="_PREh0B_tEeOs_t6Wv7p-Nw" general="_LI7nwB_tEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_BHUq0B_rEeOs_t6Wv7p-Nw" name="User's Vehicle">
+    <generalization xmi:id="_R9GqQB_tEeOs_t6Wv7p-Nw" general="_7BFsYB_qEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_D05EUB_rEeOs_t6Wv7p-Nw" name="Police">
+    <generalization xmi:id="_APZc8B_uEeOs_t6Wv7p-Nw" general="_IyJBcB_rEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_IyJBcB_rEeOs_t6Wv7p-Nw" name="Community"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_td0pwB_sEeOs_t6Wv7p-Nw" name="threat assessment">
+    <include xmi:id="_nXXW8B_uEeOs_t6Wv7p-Nw" addition="_GawL8B_uEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_6Qyl8B_sEeOs_t6Wv7p-Nw" name="Scene Recorder">
+    <generalization xmi:id="_5xtgcB_wEeOs_t6Wv7p-Nw" general="_td0pwB_sEeOs_t6Wv7p-Nw"/>
+    <extensionPoint xmi:id="_aOc_8B_uEeOs_t6Wv7p-Nw" name="point"/>
+    <include xmi:id="_QZQfoB_yEeOs_t6Wv7p-Nw" addition="_Cj02UB_xEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_AruCAB_tEeOs_t6Wv7p-Nw" name="Broadcast Alert">
+    <extend xmi:id="_SUscIB_zEeOs_t6Wv7p-Nw" extendedCase="_F3xBYB_zEeOs_t6Wv7p-Nw" extensionLocation="_SVkl4B_zEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IrQEYB_tEeOs_t6Wv7p-Nw" name="A_community_broadcast alert" memberEnd="_IrQEYR_tEeOs_t6Wv7p-Nw _IrQEZB_tEeOs_t6Wv7p-Nw">
+    <ownedEnd xmi:id="_IrQEYR_tEeOs_t6Wv7p-Nw" name="community" type="_IyJBcB_rEeOs_t6Wv7p-Nw" association="_IrQEYB_tEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IrQEYh_tEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IrQEYx_tEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_IrQEZB_tEeOs_t6Wv7p-Nw" name="broadcast alert" type="_AruCAB_tEeOs_t6Wv7p-Nw" association="_IrQEYB_tEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IrQEZR_tEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IrQEZh_tEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JgGBsB_tEeOs_t6Wv7p-Nw" name="A_user_record scene" memberEnd="_JgGBsR_tEeOs_t6Wv7p-Nw _JgGBtB_tEeOs_t6Wv7p-Nw">
+    <ownedEnd xmi:id="_JgGBsR_tEeOs_t6Wv7p-Nw" name="user" type="_7BFsYB_qEeOs_t6Wv7p-Nw" association="_JgGBsB_tEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JgGBsh_tEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JgGBsx_tEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_JgGBtB_tEeOs_t6Wv7p-Nw" name="record scene" type="_6Qyl8B_sEeOs_t6Wv7p-Nw" association="_JgGBsB_tEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JgGBtR_tEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JgGBth_tEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LI7nwB_tEeOs_t6Wv7p-Nw" name="A_user's vehicle_estimate threat" memberEnd="_LI7nwR_tEeOs_t6Wv7p-Nw _LI7nxB_tEeOs_t6Wv7p-Nw">
+    <ownedEnd xmi:id="_LI7nwR_tEeOs_t6Wv7p-Nw" name="user's vehicle" type="_BHUq0B_rEeOs_t6Wv7p-Nw" association="_LI7nwB_tEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LI7nwh_tEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LI7nwx_tEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_LI7nxB_tEeOs_t6Wv7p-Nw" name="estimate threat" type="_td0pwB_sEeOs_t6Wv7p-Nw" association="_LI7nwB_tEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LI7nxR_tEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LI7nxh_tEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MAyc0B_tEeOs_t6Wv7p-Nw" name="A_user_estimate threat" memberEnd="_MAyc0R_tEeOs_t6Wv7p-Nw _MAyc1B_tEeOs_t6Wv7p-Nw">
+    <ownedEnd xmi:id="_MAyc0R_tEeOs_t6Wv7p-Nw" name="user" type="_7BFsYB_qEeOs_t6Wv7p-Nw" association="_MAyc0B_tEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MAyc0h_tEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MAyc0x_tEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_MAyc1B_tEeOs_t6Wv7p-Nw" name="estimate threat" type="_td0pwB_sEeOs_t6Wv7p-Nw" association="_MAyc0B_tEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_MAyc1R_tEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MAyc1h_tEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GawL8B_uEeOs_t6Wv7p-Nw" name="detect agressive driving">
+    <extensionPoint xmi:id="_dn2ksB_uEeOs_t6Wv7p-Nw" name="tuiftud"/>
+    <include xmi:id="_tlCvQB_wEeOs_t6Wv7p-Nw" addition="_mTP8oB_wEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mTP8oB_wEeOs_t6Wv7p-Nw" name="data logger">
+    <generalization xmi:id="_XTK9wB_yEeOs_t6Wv7p-Nw" general="_GawL8B_uEeOs_t6Wv7p-Nw"/>
+    <include xmi:id="_IinTgB_yEeOs_t6Wv7p-Nw" addition="_FAr6UB_xEeOs_t6Wv7p-Nw"/>
+    <include xmi:id="_I_nYkB_yEeOs_t6Wv7p-Nw" addition="_Mliy4B_xEeOs_t6Wv7p-Nw"/>
+    <include xmi:id="_JU0zkB_yEeOs_t6Wv7p-Nw" addition="_OscN8B_xEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Cj02UB_xEeOs_t6Wv7p-Nw" name="5sec Video Record">
+    <generalization xmi:id="_e0c94B_yEeOs_t6Wv7p-Nw" general="_6Qyl8B_sEeOs_t6Wv7p-Nw"/>
+    <extend xmi:id="_0eGm4B_yEeOs_t6Wv7p-Nw" extendedCase="_vauMkB_yEeOs_t6Wv7p-Nw" extensionLocation="_0fOoQB_yEeOs_t6Wv7p-Nw"/>
+    <extensionPoint xmi:id="_7PI10B_yEeOs_t6Wv7p-Nw" name="point1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_FAr6UB_xEeOs_t6Wv7p-Nw" name="Detect Hard Brake">
+    <extend xmi:id="_8-6KUB_yEeOs_t6Wv7p-Nw" extendedCase="_mTP8oB_wEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Mliy4B_xEeOs_t6Wv7p-Nw" name="Detect Hard Acc">
+    <extend xmi:id="_9fLl0B_yEeOs_t6Wv7p-Nw" extendedCase="_mTP8oB_wEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_OscN8B_xEeOs_t6Wv7p-Nw" name="Detect Swerving">
+    <extend xmi:id="_-LR20B_yEeOs_t6Wv7p-Nw" extendedCase="_mTP8oB_wEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ki5HYB_yEeOs_t6Wv7p-Nw" name="Detect Cars"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_r580gB_yEeOs_t6Wv7p-Nw" name="Detect Number Plate"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_vauMkB_yEeOs_t6Wv7p-Nw" name="Identify Suspects">
+    <extend xmi:id="_7OTIUB_yEeOs_t6Wv7p-Nw" extendedCase="_Cj02UB_xEeOs_t6Wv7p-Nw" extensionLocation="_7PI10B_yEeOs_t6Wv7p-Nw"/>
+    <extensionPoint xmi:id="_0fOoQB_yEeOs_t6Wv7p-Nw" name="point"/>
+    <include xmi:id="_5j74QB_yEeOs_t6Wv7p-Nw" addition="_ki5HYB_yEeOs_t6Wv7p-Nw"/>
+    <include xmi:id="_59avQB_yEeOs_t6Wv7p-Nw" addition="_r580gB_yEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_F3xBYB_zEeOs_t6Wv7p-Nw" name="Keep Evidence Safe">
+    <extensionPoint xmi:id="_SVkl4B_zEeOs_t6Wv7p-Nw" name="point"/>
+    <include xmi:id="_5638IB_zEeOs_t6Wv7p-Nw" addition="_04XEgB_zEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_L13XgB_zEeOs_t6Wv7p-Nw" name="A_police_broadcast alert" memberEnd="_L13XgR_zEeOs_t6Wv7p-Nw _L13XhB_zEeOs_t6Wv7p-Nw">
+    <ownedEnd xmi:id="_L13XgR_zEeOs_t6Wv7p-Nw" name="police" type="_D05EUB_rEeOs_t6Wv7p-Nw" association="_L13XgB_zEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L13Xgh_zEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L13Xgx_zEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_L13XhB_zEeOs_t6Wv7p-Nw" name="broadcast alert" type="_AruCAB_tEeOs_t6Wv7p-Nw" association="_L13XgB_zEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L13XhR_zEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L13Xhh_zEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_eHGTMB_zEeOs_t6Wv7p-Nw" name="Geo-Tracking subjects">
+    <extend xmi:id="_kC_p4B_zEeOs_t6Wv7p-Nw" extendedCase="_F3xBYB_zEeOs_t6Wv7p-Nw" extensionLocation="_SVkl4B_zEeOs_t6Wv7p-Nw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mEiq4B_zEeOs_t6Wv7p-Nw" name="A_user_geo-tracking subjects" memberEnd="_mEiq4R_zEeOs_t6Wv7p-Nw _mEiq5B_zEeOs_t6Wv7p-Nw">
+    <ownedEnd xmi:id="_mEiq4R_zEeOs_t6Wv7p-Nw" name="user" type="_7BFsYB_qEeOs_t6Wv7p-Nw" association="_mEiq4B_zEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mEiq4h_zEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mEiq4x_zEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_mEiq5B_zEeOs_t6Wv7p-Nw" name="geo-tracking subjects" type="_eHGTMB_zEeOs_t6Wv7p-Nw" association="_mEiq4B_zEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mEiq5R_zEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mEiq5h_zEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mrO3cB_zEeOs_t6Wv7p-Nw" name="A_community_geo-tracking subjects" memberEnd="_mrO3cR_zEeOs_t6Wv7p-Nw _mrO3dB_zEeOs_t6Wv7p-Nw">
+    <ownedEnd xmi:id="_mrO3cR_zEeOs_t6Wv7p-Nw" name="community" type="_IyJBcB_rEeOs_t6Wv7p-Nw" association="_mrO3cB_zEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mrO3ch_zEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mrO3cx_zEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_mrO3dB_zEeOs_t6Wv7p-Nw" name="geo-tracking subjects" type="_eHGTMB_zEeOs_t6Wv7p-Nw" association="_mrO3cB_zEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mrO3dR_zEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mrO3dh_zEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_04XEgB_zEeOs_t6Wv7p-Nw" clientDependency="_DyKxYB_0EeOs_t6Wv7p-Nw" name="Stream to Cloud"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7ygzMB_zEeOs_t6Wv7p-Nw" name="A_stream to cloud_identify suspects" memberEnd="_7ygzMR_zEeOs_t6Wv7p-Nw _7ygzNB_zEeOs_t6Wv7p-Nw">
+    <ownedEnd xmi:id="_7ygzMR_zEeOs_t6Wv7p-Nw" name="stream to cloud" type="_04XEgB_zEeOs_t6Wv7p-Nw" association="_7ygzMB_zEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ygzMh_zEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ygzMx_zEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_7ygzNB_zEeOs_t6Wv7p-Nw" name="identify suspects" type="_vauMkB_yEeOs_t6Wv7p-Nw" association="_7ygzMB_zEeOs_t6Wv7p-Nw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7ygzNR_zEeOs_t6Wv7p-Nw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7ygzNh_zEeOs_t6Wv7p-Nw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_DyKxYB_0EeOs_t6Wv7p-Nw" name="Usage1" client="_04XEgB_zEeOs_t6Wv7p-Nw" supplier="_vauMkB_yEeOs_t6Wv7p-Nw"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_06CjoCCwEeO6nMmUg-29YQ" clientDependency="_UuYlYCC5EeO6nMmUg-29YQ _zw2X4CC5EeO6nMmUg-29YQ _3olB8CC6EeO6nMmUg-29YQ _sWjQ0CF6EeOTYqjecld6AA _zOKsECF-EeOTYqjecld6AA" name="Driving Style">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_touqYCF6EeOTYqjecld6AA" clientDependency="_2wnb8CF6EeOTYqjecld6AA" name="Port_DataLogger" visibility="public" type="_qDJDwCF6EeOTYqjecld6AA" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_t-yZ8CF6EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_t-zoECF6EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_t-02MCF6EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_-yOsgCF7EeOTYqjecld6AA" name="ort_BluetoothOBD2" visibility="public" type="_HEkWICF8EeOTYqjecld6AA" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__US3wCF7EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__UTe0CF7EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="__UUs8CF7EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_Fib1ECC4EeO6nMmUg-29YQ" clientDependency="_k0cr8CFnEeOTYqjecld6AA _tizjMCFnEeOTYqjecld6AA _xZOIMCF0EeOTYqjecld6AA _zzWBQCF0EeOTYqjecld6AA __yq6ACF0EeOTYqjecld6AA _AOp5ICF6EeOTYqjecld6AA" name="Risk Estimator">
+    <generalization xmi:id="_uQXwoCFjEeOTYqjecld6AA" general="_UtMSkCC5EeO6nMmUg-29YQ"/>
+    <generalization xmi:id="_hNQi0CFnEeOTYqjecld6AA" general="_hMP2MCFnEeOTYqjecld6AA"/>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_kG4S8CF1EeOTYqjecld6AA" clientDependency="_DjzakCF7EeOTYqjecld6AA" name="Port_RiskTrend_Cloud" visibility="public" type="_hMP2MCFnEeOTYqjecld6AA" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lMqPQCF1EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lMrdYCF1EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_lMsrgCF1EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_UtMSkCC5EeO6nMmUg-29YQ" clientDependency="_0GQUACFlEeOTYqjecld6AA" name="Hard Brake">
+    <protocol xmi:id="_AmlBACFmEeOTYqjecld6AA" name="Hard Brake" isActive="true"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_UuYlYCC5EeO6nMmUg-29YQ" name="Realization0" client="_06CjoCCwEeO6nMmUg-29YQ" supplier="_UtMSkCC5EeO6nMmUg-29YQ" contract="_UtMSkCC5EeO6nMmUg-29YQ">
+    <mapping xmi:id="_KWnOYCC7EeO6nMmUg-29YQ" body="">
+      <language>C++</language>
+    </mapping>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_zv2SUCC5EeO6nMmUg-29YQ" name="Hard Swerving">
+    <protocol xmi:id="_IksuICFmEeOTYqjecld6AA" name="Hard Swerving"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_zw2X4CC5EeO6nMmUg-29YQ" name="Realization1" client="_06CjoCCwEeO6nMmUg-29YQ" supplier="_zv2SUCC5EeO6nMmUg-29YQ" contract="_zv2SUCC5EeO6nMmUg-29YQ">
+    <mapping xmi:id="_Nz6bsCC7EeO6nMmUg-29YQ" body="">
+      <language>C++</language>
+    </mapping>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_KGfkMCC6EeO6nMmUg-29YQ" name="Hard Acc">
+    <protocol xmi:id="_HARG8CFmEeOTYqjecld6AA" name="Hard Acc"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_TxRncCC6EeO6nMmUg-29YQ" clientDependency="_nCchoCF0EeOTYqjecld6AA _R-9EQCF1EeOTYqjecld6AA" name="Scene Recorder">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_9vKDwCFsEeOTYqjecld6AA" name="Port_TriggerIn" visibility="public" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-hA-gCFsEeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-hCzsCFsEeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_-hEB0CFsEeOTYqjecld6AA" value=""/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_B9erECF9EeOTYqjecld6AA" clientDependency="_EWdfMCF-EeOTYqjecld6AA _UV7MkCF-EeOTYqjecld6AA" name="Port_StreamCloud" visibility="public" type="_BABH0CF-EeOTYqjecld6AA" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CVPq0CF9EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CVQR4CF9EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_CVRgACF9EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_F-9jgCF9EeOTYqjecld6AA" clientDependency="__kXzwCF-EeOTYqjecld6AA" name="Port_5SecVideo" visibility="public" type="_41mOoCF-EeOTYqjecld6AA" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GPiWICF9EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GPi9MCF9EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_GPkyYCF9EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_3olB8CC6EeO6nMmUg-29YQ" name="Realization2" client="_06CjoCCwEeO6nMmUg-29YQ" supplier="_KGfkMCC6EeO6nMmUg-29YQ" contract="_KGfkMCC6EeO6nMmUg-29YQ">
+    <mapping xmi:id="_MMULwCC7EeO6nMmUg-29YQ" body="">
+      <language>C++</language>
+    </mapping>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Substitution" xmi:id="_0GQUACFlEeOTYqjecld6AA" name="Substitution1" client="_UtMSkCC5EeO6nMmUg-29YQ" supplier="_Fib1ECC4EeO6nMmUg-29YQ"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_hMP2MCFnEeOTYqjecld6AA" name="RiskTrend_Cloud"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_kzWfwCFnEeOTYqjecld6AA" clientDependency="_tizjMCFnEeOTYqjecld6AA _wah-QCFnEeOTYqjecld6AA" name="Trigger Recorder"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_k0cr8CFnEeOTYqjecld6AA" name="Realization3" client="_Fib1ECC4EeO6nMmUg-29YQ" supplier="_kzWfwCFnEeOTYqjecld6AA" contract="_kzWfwCFnEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:ComponentRealization" xmi:id="_tizjMCFnEeOTYqjecld6AA" name="ComponentRealization1" client="_kzWfwCFnEeOTYqjecld6AA _Fib1ECC4EeO6nMmUg-29YQ" supplier="_TxRncCC6EeO6nMmUg-29YQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_wah-QCFnEeOTYqjecld6AA" name="Dependency3" client="_kzWfwCFnEeOTYqjecld6AA" supplier="_TxRncCC6EeO6nMmUg-29YQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_nCchoCF0EeOTYqjecld6AA" name="Usage0" client="_TxRncCC6EeO6nMmUg-29YQ" supplier="_kzWfwCFnEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_xZOIMCF0EeOTYqjecld6AA" name="Usage2" client="_Fib1ECC4EeO6nMmUg-29YQ" supplier="_UtMSkCC5EeO6nMmUg-29YQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_zzWBQCF0EeOTYqjecld6AA" name="Usage3" client="_Fib1ECC4EeO6nMmUg-29YQ" supplier="_KGfkMCC6EeO6nMmUg-29YQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="__yq6ACF0EeOTYqjecld6AA" name="Usage4" client="_Fib1ECC4EeO6nMmUg-29YQ" supplier="_zv2SUCC5EeO6nMmUg-29YQ"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_R-9EQCF1EeOTYqjecld6AA" name="Usage5" client="_TxRncCC6EeO6nMmUg-29YQ" supplier="_kzWfwCFnEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_BaYCMCF2EeOTYqjecld6AA" clientDependency="_KWfooCF2EeOTYqjecld6AA" name="UI_Device">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_xGLTkCF4EeOTYqjecld6AA" clientDependency="_CUUlICF6EeOTYqjecld6AA" name="Port_HWButton" visibility="public" type="_kzWfwCFnEeOTYqjecld6AA" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yFD9sCF4EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yFFL0CF4EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yFGZ8CF4EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_KWfooCF2EeOTYqjecld6AA" name="Realization5" client="_BaYCMCF2EeOTYqjecld6AA" supplier="_kzWfwCFnEeOTYqjecld6AA" contract="_kzWfwCFnEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_C6tsMCF5EeOTYqjecld6AA" name="HW_Button"/>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_AOp5ICF6EeOTYqjecld6AA" name="" client="_Fib1ECC4EeO6nMmUg-29YQ" supplier="_kzWfwCFnEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_CUUlICF6EeOTYqjecld6AA" name="Realization4" client="_xGLTkCF4EeOTYqjecld6AA" supplier="_kzWfwCFnEeOTYqjecld6AA" contract="_kzWfwCFnEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_XF_dQCF6EeOTYqjecld6AA" clientDependency="_OYg6UCF7EeOTYqjecld6AA _Qc83QCF7EeOTYqjecld6AA _UR5ywCF_EeOTYqjecld6AA _L2BWICGAEeOTYqjecld6AA _Ma3voCGAEeOTYqjecld6AA _M6YWICGAEeOTYqjecld6AA" name="Risk_Assess_Cloud">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_Tts2UCF7EeOTYqjecld6AA" clientDependency="_boSHQCF7EeOTYqjecld6AA" name="Port_SafeDataLogger" visibility="public" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UOfPMCF7EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UOf2QCF7EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_UOhEYCF7EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_WhEV0CF7EeOTYqjecld6AA" clientDependency="_Zeo6MCF7EeOTYqjecld6AA" name="Port_SafeRiskTrend" visibility="public" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Wz05wCF7EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Wz1g0CF7EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_Wz2u8CF7EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_YC1twCF_EeOTYqjecld6AA" clientDependency="_eHbGYCF_EeOTYqjecld6AA" name="Port_SafeRawVideo" visibility="public" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YVVL8CF_EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YVVzACF_EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_YVXoMCF_EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_vPGjkCGAEeOTYqjecld6AA" name="Port_SafeNumberPlateStream" visibility="public" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vyMpkCGAEeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vyNQoCGAEeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_vyOewCGAEeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_CU42wCGDEeOTYqjecld6AA" clientDependency="_xrB2oCGEEeOTYqjecld6AA" name="Port_SafeNumberPlate" visibility="public" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DQVLUCGDEeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DQVyYCGDEeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_DQY1sCGDEeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_qDJDwCF6EeOTYqjecld6AA" name="Data Logger"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_sWjQ0CF6EeOTYqjecld6AA" name="Realization6" client="_06CjoCCwEeO6nMmUg-29YQ" supplier="_qDJDwCF6EeOTYqjecld6AA" contract="_qDJDwCF6EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_2wnb8CF6EeOTYqjecld6AA" name="Realization7" client="_touqYCF6EeOTYqjecld6AA" supplier="_qDJDwCF6EeOTYqjecld6AA" contract="_qDJDwCF6EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-5tqACF6EeOTYqjecld6AA" name="RiskTrend"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_DjzakCF7EeOTYqjecld6AA" name="Realization8" client="_kG4S8CF1EeOTYqjecld6AA" supplier="_-5tqACF6EeOTYqjecld6AA" contract="_-5tqACF6EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_OYg6UCF7EeOTYqjecld6AA" name="Usage6" client="_XF_dQCF6EeOTYqjecld6AA" supplier="_qDJDwCF6EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Qc83QCF7EeOTYqjecld6AA" name="Usage7" client="_XF_dQCF6EeOTYqjecld6AA" supplier="_-5tqACF6EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_Zeo6MCF7EeOTYqjecld6AA" name="Usage8" client="_WhEV0CF7EeOTYqjecld6AA" supplier="_-5tqACF6EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_boSHQCF7EeOTYqjecld6AA" name="Usage9" client="_Tts2UCF7EeOTYqjecld6AA" supplier="_qDJDwCF6EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_HEkWICF8EeOTYqjecld6AA" name="BluetoothOBD2"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_JF1DQCF8EeOTYqjecld6AA" name="Usage10" supplier="_HEkWICF8EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_u2MbsCF9EeOTYqjecld6AA" name="Component0"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_22ONUCF9EeOTYqjecld6AA" clientDependency="_nin1gCF_EeOTYqjecld6AA" name="Identify Suspects">
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_0kPRsCF_EeOTYqjecld6AA" clientDependency="_rYNxkCGAEeOTYqjecld6AA" name="Port_CarDetector" visibility="public" type="_oouFcCGAEeOTYqjecld6AA" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_023SwCF_EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_024g4CF_EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_025vACF_EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Port" xmi:id="_4c-d0CF_EeOTYqjecld6AA" clientDependency="_jHOrcCGDEeOTYqjecld6AA" name="Port_NumberPlateDector" visibility="public" type="_Xk2UwCGAEeOTYqjecld6AA" aggregation="composite">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4t09QCF_EeOTYqjecld6AA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4t1kUCF_EeOTYqjecld6AA" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_4t3ZgCF_EeOTYqjecld6AA">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_BABH0CF-EeOTYqjecld6AA" name="RawVideoStream"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_EWdfMCF-EeOTYqjecld6AA" name="Realization9" client="_B9erECF9EeOTYqjecld6AA" supplier="_BABH0CF-EeOTYqjecld6AA" contract="_BABH0CF-EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_UV7MkCF-EeOTYqjecld6AA" name="Realization10" client="_B9erECF9EeOTYqjecld6AA" supplier="_BABH0CF-EeOTYqjecld6AA" contract="_BABH0CF-EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_iDvAYCF-EeOTYqjecld6AA" name="Usage" supplier="_HEkWICF8EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_zOKsECF-EeOTYqjecld6AA" name="Usage11" client="_06CjoCCwEeO6nMmUg-29YQ" supplier="_HEkWICF8EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_41mOoCF-EeOTYqjecld6AA" name="5RawVideo"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="__kXzwCF-EeOTYqjecld6AA" name="Realization" client="_F-9jgCF9EeOTYqjecld6AA" supplier="_41mOoCF-EeOTYqjecld6AA" contract="_41mOoCF-EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_UR5ywCF_EeOTYqjecld6AA" name="Usage" client="_XF_dQCF6EeOTYqjecld6AA" supplier="_BABH0CF-EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_eHbGYCF_EeOTYqjecld6AA" name="Usage" client="_YC1twCF_EeOTYqjecld6AA" supplier="_BABH0CF-EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_nin1gCF_EeOTYqjecld6AA" name="Usage" client="_22ONUCF9EeOTYqjecld6AA" supplier="_41mOoCF-EeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_A8Wd4CGAEeOTYqjecld6AA" name="SafeEncryptEvidence"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_CIzp8CGAEeOTYqjecld6AA" name="BroadcastAlert"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_EiA9ACGAEeOTYqjecld6AA" name="GeoTracking"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_L2BWICGAEeOTYqjecld6AA" name="Realization" client="_XF_dQCF6EeOTYqjecld6AA" supplier="_A8Wd4CGAEeOTYqjecld6AA" contract="_A8Wd4CGAEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_Ma3voCGAEeOTYqjecld6AA" name="Realization" client="_XF_dQCF6EeOTYqjecld6AA" supplier="_CIzp8CGAEeOTYqjecld6AA" contract="_CIzp8CGAEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_M6YWICGAEeOTYqjecld6AA" name="Realization" client="_XF_dQCF6EeOTYqjecld6AA" supplier="_EiA9ACGAEeOTYqjecld6AA" contract="_EiA9ACGAEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_Xk2UwCGAEeOTYqjecld6AA" name="NumberPlate"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_oouFcCGAEeOTYqjecld6AA" name="CarDetector"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_rYNxkCGAEeOTYqjecld6AA" name="Realization" client="_0kPRsCF_EeOTYqjecld6AA" supplier="_oouFcCGAEeOTYqjecld6AA" contract="_oouFcCGAEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:InterfaceRealization" xmi:id="_jHOrcCGDEeOTYqjecld6AA" name="Realization" client="_4c-d0CF_EeOTYqjecld6AA" supplier="_Xk2UwCGAEeOTYqjecld6AA" contract="_Xk2UwCGAEeOTYqjecld6AA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_xrB2oCGEEeOTYqjecld6AA" name="Usage10" client="_CU42wCGDEeOTYqjecld6AA" supplier="_Xk2UwCGAEeOTYqjecld6AA"/>
 </uml:Model>
